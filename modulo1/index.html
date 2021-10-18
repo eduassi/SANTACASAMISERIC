@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta charset="utf-8" />
+
+    <!-- Alterar o nome do curso -->
+    <title>Cuidador de Idosos | Aula 01</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <!-- Estilos -->
+    <link
+      rel="stylesheet"
+      href="../player/css/boots-bones.css"
+      type="text/css"
+      media="all"
+    />
+    <!-- <link
+      rel="stylesheet"
+      type="text/css"
+      href="../player/css/bootstrap.min.css"
+    /> -->
+    <link href="../player/css/jquery-ui-1.10.0.custom.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="../player/css/component.css" />
+    <link
+      href="../player/css/font-awesome-4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" type="text/css" href="../player/slick/slick.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../player/slick/slick-theme.css"
+    />
+    <link href="../player/css/estilo.css" rel="stylesheet" type="text/css" />
+    <!-- resource: green-audio-player -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../player/audio/css/green-audio-player.css"
+    />
+    <!-- ./ resource: green-audio-player -->
+    <link rel="stylesheet" type="text/css" href="../player/css/moveedu.css" />
+  </head>
+  <!-- <body class="qc-flow"> -->
+  <body>
+    <div class="container-titulo hide-element" style="margin-top: 0">
+      <div class="titulo">
+        <div class="titulo-h">
+          <h1>Cuidador de Idosos | Aula 01</h1>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div id="mestre">
+        <div id="loader">
+          <div class="load">
+            <i class="fa fa-spinner fa-spin" aria-hidden="true"></i>
+          </div>
+        </div>
+        
+        <div id="slide0" class="palco" sound="hide"></div>
+        <div id="slide1" class="palco" sound="u1-01.mp3"></div>
+        <div id="slide2" class="palco" sound="u1-02.mp3"></div>
+        <div id="slide3" class="palco" sound="u1-03.mp3"></div>
+        <div id="slide4" class="palco" sound="u1-04.mp3"></div>
+        <div id="slide5" class="palco" sound="u1-05.mp3"></div>
+        <div id="slide6" class="palco" sound="06.mp3"></div>
+        <div id="slide7" class="palco" sound="u1-07.mp3"></div>
+        <div id="slide8" class="palco" sound="u1-08.mp3"></div>
+        <div id="slide9" class="palco" sound="u1-09.mp3"></div>
+        <div id="slide10" class="palco" sound="u1-10.mp3"></div>
+        <div id="slide11" class="palco" sound="u1-11.mp3"></div>
+        <div id="slide12" class="palco" sound="u1-12.mp3"></div>
+        <div id="slide13" class="palco" sound="u1-13.mp3"></div>
+        <div id="slide14" class="palco" sound="u1-14.mp3"></div>
+        <div id="slide15" class="palco" sound="u1-15.mp3"></div>
+        <div id="slide16" class="palco" sound="hide"></div> 
+        <div id="slide17" class="palco" sound="hide"></div>
+        <div id="slide18" class="palco" sound="hide"></div>
+
+
+
+        <!-- <div id="slide0" class="palco" sound="hide"></div>
+        <div id="slide1" class="palco" sound="hide"></div>
+        <div id="slide2" class="palco" sound="hide"></div>
+        <div id="slide3" class="palco" sound="hide"></div>
+        <div id="slide4" class="palco" sound="hide"></div>
+        <div id="slide5" class="palco" sound="hide"></div>
+        <div id="slide6" class="palco" sound="hide"></div>
+        <div id="slide7" class="palco" sound="hide"></div>
+        <div id="slide8" class="palco" sound="hide"></div>
+        <div id="slide9" class="palco" sound="hide"></div>
+        <div id="slide10" class="palco" sound="hide"></div>
+        <div id="slide11" class="palco" sound="hide"></div>
+        <div id="slide12" class="palco" sound="hide"></div>
+        <div id="slide13" class="palco" sound="hide"></div>
+        <div id="slide14" class="palco" sound="hide"></div>
+        <div id="slide15" class="palco" sound="hide"></div>
+        <div id="slide16" class="palco" sound="hide"></div>
+        <div id="slide17" class="palco" sound="hide"></div>
+        <div id="slide18" class="palco" sound="hide"></div> -->
+
+     
+
+        <div id="menu" class="palco2"></div>
+      </div>
+    </div>
+
+    <div class="audio-holder hide-element-all-screens" id="audio-holder"></div>
+
+    <div class="foot-container hide-element">
+      <div class="foot">
+        <div class="menu-cenas-footer" style="display: none">
+          <h3>
+            Cuidador de Idosos | Aula 01<img
+              src="../player/img/close.png"
+              onclick="toggleMenu()"
+            />
+          </h3>
+          <ul id="menu-content-holder" onclick="toggleMenu()">
+            <li><a href="javascript:vai(0)">Início</a></li>
+            <li><a href="javascript:vai(1)">Apresentação</a></li>
+            <li><a href="javascript:vai(2)">Slide 3</a></li>
+            <li><a href="javascript:vai(3)">Slide 4</a></li>
+            <li><a href="javascript:vai(4)">Slide 5</a></li>
+            <li>
+              <a href="javascript:vai(5)"
+                >1. Os principais conceitos acerca do processo de
+                envelhecimento</a
+              >
+            </li>
+            <li><a href="javascript:vai(6)">Slide 7</a></li>
+            <li><a href="javascript:vai(7)">Slide 8</a></li>
+            <li>
+              <a href="javascript:vai(8)"
+                >1.2 As grandes transições demográficas</a
+              >
+            </li>
+            <li><a href="javascript:vai(9)">Slide 10</a></li>
+            <li><a href="javascript:vai(10)">Slide 11</a></li>
+            <li>
+              <a href="javascript:vai(11)"
+                >1.3 O profissional cuidador de idosos</a
+              >
+            </li>
+            <li><a href="javascript:vai(12)">Slide 13</a></li>
+            <li>
+              <a href="javascript:vai(13)"
+                >1.4 Atribuições do cuidador de idosos</a
+              >
+            </li>
+            <li><a href="javascript:vai(14)">Slide 15</a></li>
+            <li><a href="javascript:vai(15)">1.5 Sistematização</a></li>
+            <li><a href="javascript:vai(16)">Vídeo 1</a></li>
+            <li><a href="javascript:vai(17)">Vídeo 2</a></li>
+            <li><a href="javascript:vai(18)">Referências</a></li>
+           
+          </ul>
+        </div>
+
+        <!-- <span class="menu" style="cursor: pointer; position: relative">
+          <img id="showmenu" src="../player/img/botao-menu.png" />
+        </span> -->
+
+        <div class="copyright">
+          <span class="long">Copyright</span>
+          <span class="short">© <span id="year"></span> Delinea</span>
+          <span class="long">Tecnologia Educacional</span>
+        </div>
+        <div class="controles">
+          <a class="footPrev" href="javascript:controlador(2);"
+            ><img src="../player/img/botao-prox.png"
+          /></a>
+          <div class="infoslide-container">
+            <div class="infoslide">
+              <span id="sl-at"> </span> de <span id="sl-tot"> </span>
+            </div>
+          </div>
+          <a class="footProx" href="javascript:controlador(1);"
+            ><img src="../player/img/botao-prox.png"
+          /></a>
+        </div>
+      </div>
+
+      <div class="overlay"></div>
+    </div>
+
+    <script>
+      $nome = "ibm00X-ultimaVisitaMod1";
+    </script>
+
+    <script
+      src="../player/js/bootstrap.min.js"
+      type="text/javascript"
+      charset="utf-8"
+    ></script>
+    <script src="../player/js/moveedu.js"></script>
+    <script src="../player/js/jquery.js"></script>
+    <script src="../player/js/jquery-ui-1.10.0.custom.min.js"></script>
+    <script src="../player/js/jquery.fancybox.pack.js"></script>
+    <script src="../player/js/acoes.js"></script>
+    <script
+      type="text/javascript"
+      src="../player/js/jquery.easing.1.3.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="../player/js/modernizr.2.5.3.min.js"
+    ></script>
+    <script src="../player/js/APIWrapper.js"></script>
+    <script src="../player/js/SCOFunctions.js"></script>
+    <script src="../player/js/plugin.js"></script>
+    <script src="../player/js/bookblock/jquerypp.custom.js"></script>
+    <script src="../player/js/bookblock/jquery.bookblock.js"></script>
+    <script
+      src="../player/slick/slick.js"
+      type="text/javascript"
+      charset="utf-8"
+    ></script>
+
+    <!-- resource: green-audio-player -->
+    <script src="../player/audio/js/green-audio-player.js"></script>
+    <!-- ./ resource: green-audio-player -->
+    <script>
+      function toggleMenu() {
+        $("#showmenu").trigger("click");
+      }
+
+      document.getElementById("year").innerHTML = new Date().getFullYear();
+
+      $(document).ready(function () {
+        $("#showmenu").click(function () {
+          $(".menu-cenas-footer").slideToggle("fast");
+          $(".overlay").fadeToggle(400);
+        });
+
+        $(".overlay").click(function () {
+          $("#showmenu").trigger("click");
+        });
+      });
+    </script>
+  </body>
+</html>

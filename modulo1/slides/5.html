@@ -1,0 +1,99 @@
+﻿<style>
+  #mestre {
+    background: url("../../player/img/fundo-laranja.jpg"); /* laranja */
+    /* background: url('../../player/img/fundo-vermelho.jpg'); /* vermelho */
+    background-position: right top;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+  }
+</style>
+
+<div class="cena-secondary-color">
+  <div class="colunas">
+    <div class="coluna-60">
+      <div class="box">
+        <h1>1. Os principais conceitos acerca do processo de envelhecimento</h1>
+
+        <p>
+          A seguir, conheça os principais conceitos relacionados ao
+          envelhecimento. Para você, que quer trabalhar com idosos, é muito
+          importante entendê-los. Clique nos ícones.
+        </p>
+
+        <div id="accordion">
+          <h3>Autonomia:</h3>
+          <div>
+            <p>
+              de acordo com Ferreira (2012), é a liberdade para agir e tomar
+              decisões no dia a dia relacionadas à própria vida.
+            </p>
+          </div>
+
+          <h3>Independência:</h3>
+          <div>
+            <p>
+                é a capacidade de realizar atividades sem a ajuda de outra pessoa, o que requer condições motoras e cognitivas suficientes para o desempenho dessas tarefas (FERREIRA, 2012).
+            </p>
+          </div>
+
+          <h3>Capacidade funcional do idoso: </h3>
+          <div>
+            <p>
+                conforme Barbosa (2014), é o potencial que os idosos apresentam para decidir e atuar em suas vidas de forma independente no seu cotidiano. 
+            </p>
+          </div>
+
+          <h3>Senescência (envelhecimento primário): </h3>
+          <div>
+            <p>
+                é o processo de envelhecimento que ocorre de forma sadia, com aspectos positivos.
+            </p>
+          </div>
+
+          <h3>Senelidade (envelhecimento secundário): </h3>
+          <div>
+            <p>
+                acontece quando o processo de envelhecimento é acompanhado de doenças e transtornos mentais e marcado por aspectos negativos que prejudicam o idoso. 
+            </p>
+          </div>
+
+          <h3>Envelhecimento terciário: </h3>
+          <div>
+            <p>
+                é o envelhecimento causado por fatores externos que causam doenças que prejudicam a autonomia e a independência. 
+            </p>
+          </div>
+
+
+
+
+        </div>
+      </div>
+    </div>
+    <div class="coluna-40">
+      <div class="box">
+        <div class="box">
+          <p>
+            Agora, você sabe que um idoso saudável é aquele que consegue fazer suas atividades diárias e administrar sua vida sozinho. Ele é capaz de ir ao banheiro sem assistência, consegue se alimentar e se vestir sem ajuda, administra suas finanças. Nesse contexto, você precisa entender que o simples fato de um idoso não conseguir se locomover não significa que ele não seja saudável, desde que suas perdas funcionais não interfiram em sua vida cotidiana.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+  $(document).ready(function () {
+    $(".fancybox").fancybox();
+    icones();
+    $(document).tooltip();
+  });
+</script>
+<script>
+  $(function () {
+    $("#accordion").accordion({
+      collapsible: true,
+      heightStyle: "content",
+    });
+  });
+</script>

@@ -1,0 +1,106 @@
+<style>
+    #mestre {
+      background: url("../../player/img/fundo-laranja.jpg"); /* laranja */
+      /* background: url('../../player/img/fundo-vermelho.jpg'); /* vermelho */
+      background-position: right top;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+    }
+  </style>
+  
+  <div class="cena-secondary-color">
+    <div class="colunas">
+      <div class="coluna-30">
+        <div class="box">       
+  
+          <p>
+            Em 2011, o Senado aprovou o Projeto de Lei n. 284, que prevê a regulamentação da profissão de cuidador de idosos. O documento estabelece pré-requisitos para esse profissional: ter no mínimo 18 anos, diploma de ensino fundamental completo e ter feito um curso de qualificação em uma instituição reconhecida pelo Ministério da Educação (MEC). Ele aguarda a apreciação da Câmara dos Deputados.
+          </p>
+  
+          <p class="centro">
+            <a href="#popup-tela1" class="efeito_fade fancybox saibamais square"
+              >Saiba mais</a
+            >
+          </p>
+          <div class="popup saibam" id="popup-tela1">
+            <h3>Saiba mais</h3>
+            <p>
+                A cada ano, há um aumento significativo na procura pelos profissionais cuidadores de idosos. Segundo o site Medicina A/S, houve aumento de 50% nas solicitações de cuidadores de idosos em razão da pandemia do novo coronavírus. Para ler a matéria completa, clique no link<br /><a
+                href="https://medicinasa.com.br/cuidadores-idosos-cresce/"
+                target="_blank"
+                >https://medicinasa.com.br/cuidadores-idosos-cresce/</a
+              >.
+            </p>
+          </div>
+  
+         
+        </div>
+      </div>
+  
+      <div class="coluna-70">
+        <div class="box">
+
+            <h2>1.4 Atribuições do cuidador de idosos</h2>
+
+            <p>Você sabe quais serão as suas funções e atribuições quando começar a desempenhar o trabalho de cuidador de idosos? Preste atenção, pois a profissão envolve muitas responsabilidades. </p>
+
+            <div id="accordion">
+                <h3>Incentivar</h3>
+                <div>
+                  <p>
+                    O cuidador deve incentivar o relacionamento do idoso com sua família, equipe de saúde, outros idosos e amigos. Manter-se em contato com as pessoas e ter uma vida social ativa é essencial para um envelhecimento saudável.
+                  </p>                  
+                </div>
+      
+                <h3>Cuidar das AVD</h3>
+                <div>
+                  <p>A sigla AVD significa “atividades de vida diária”. É primordial que o cuidador ajude os nas diferentes ações do dia a dia, como vestir-se, alimentar-se e tomar banho, por exemplo.</p>  
+                </div>
+
+                <h3>Cuidar da medicação </h3>
+                <div>
+                  <p>Um cuidador de idoso deve estar sempre atento para administrar a medicação do idoso de acordo com os procedimentos estabelecidos pela equipe de saúde.</p>
+                </div>
+
+                <h3>Estimular a prática de exercícios</h3>
+                <div>
+                  <p>É primordial estimular e auxiliar o idoso na prática de exercícios físicos para o envelhecimento saudável.</p>
+                </div>
+
+                <h3>Planejar e participar de momentos de lazer</h3>
+                <div>
+                  <p>É preciso acompanhar os idosos nos momentos de lazer e descontração em atividades que deem prazer. </p>
+                </div>
+
+                <h3>Ter uma boa comunicação com a equipe de saúde</h3>
+                <div>
+                  <p>É muito importante que o cuidador esteja sempre em contato com a equipe de saúde e com a família do idoso. </p>
+                </div>
+
+
+              </div>
+            
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $(".fancybox").fancybox();
+      icones();
+      $(document).tooltip();
+    });
+  </script>
+  <script>
+    $(function () {
+      $("#accordion").accordion({
+        collapsible: true,
+        heightStyle: "content",
+      });
+    });
+  </script>
+
+  

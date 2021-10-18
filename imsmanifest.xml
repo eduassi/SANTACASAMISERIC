@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--This is a Reload version 2.5.6 SCORM 1.2 Content Package document-->
+<!--Spawned from the Reload Content Package Generator - http://www.reload.ac.uk-->
+<manifest xmlns="http://www.imsproject.org/xsd/imscp_rootv1p1p2" xmlns:imsmd="http://www.imsglobal.org/xsd/imsmd_rootv1p2p1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:adlcp="http://www.adlnet.org/xsd/adlcp_rootv1p2" identifier="MANIFEST-3C0DB1F9B9521B65640275E8AED4CDD9" xsi:schemaLocation="http://www.imsproject.org/xsd/imscp_rootv1p1p2 imscp_rootv1p1p2.xsd http://www.imsglobal.org/xsd/imsmd_rootv1p2p1 imsmd_rootv1p2p1.xsd http://www.adlnet.org/xsd/adlcp_rootv1p2 adlcp_rootv1p2.xsd">
+  <organizations default="ORG-87548F3C4D2523B29D4FA5A8B0C786F1">
+    <organization identifier="ORG-87548F3C4D2523B29D4FA5A8B0C786F1" structure="hierarchical">
+      <title>Santa Casa de Misericórdia de Porto Alegre</title>
+      <item identifier="ITEM-E20686989D29A0DD8B6AC5E7EC62C30C" isvisible="true" identifierref="RES-200CC08D60332FCE055DD03744107A55">
+        <title>Aula 1</title>
+      </item>
+    </organization>
+  </organizations>
+  <resources>
+    <resource identifier="RES-200CC08D60332FCE055DD03744107A55" type="webcontent" href="modulo1/index.html">
+      <file href="modulo1/index.html" />
+      <file href="player/css/boots-bones.css" />
+      <file href="player/css/jquery-ui-1.10.0.custom.css" />
+    </resource>
+  </resources>
+</manifest>
+

@@ -1,0 +1,857 @@
+/* General Demo Style */
+html { height: 100%; }
+
+body {
+	
+	-webkit-font-smoothing: antialiased;
+	overflow: hidden;
+}
+
+
+
+
+
+/* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
+
+.codrops-top:before,
+.codrops-top:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.codrops-top:after {
+    clear: both
+}
+
+.codrops-top a{
+	padding: 0px 10px;
+	letter-spacing: 1px;
+	color: #555;
+	display: inline-block;
+}
+
+.codrops-top a:hover {
+	color: #000;
+}
+
+.codrops-top span.right {
+	float: right;
+}
+
+.codrops-top span.right a {
+	float: left;
+	display: block;
+}
+
+.support-note span{
+	color: #ac375d;
+	font-size: 16px;
+	display: none;
+	font-weight: bold;
+	text-align: center;
+	padding: 5px 0;
+}
+
+.no-cssanimations .support-note span.no-cssanimations,
+.no-csstransforms .support-note span.no-csstransforms,
+.no-csstransforms3d .support-note span.no-csstransforms3d,
+.no-csstransitions .support-note span.no-csstransitions{
+	display: block;
+}
+
+@media screen and (max-width: 860px) {
+	.codrops-top {
+		display: none;
+	}
+}
+
+
+
+/* NORMALIZE */
+
+
+/* *! normalize.css 2012-03-11T12:53 UTC - http://github.com/necolas/normalize.css */
+
+/* =============================================================================
+   HTML5 display definitions
+   ========================================================================== */
+
+/*
+ * Corrects block display not defined in IE6/7/8/9 & FF3
+ */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+summary {
+    display: block;
+}
+
+/*
+ * Corrects inline-block display not defined in IE6/7/8/9 & FF3
+ */
+
+audio,
+canvas,
+video {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+}
+
+/*
+ * Prevents modern browsers from displaying 'audio' without controls
+ * Remove excess height in iOS5 devices
+ */
+
+audio:not([controls]) {
+    display: none;
+    height: 0;
+}
+
+/*
+ * Addresses styling for 'hidden' attribute not present in IE7/8/9, FF3, S4
+ * Known issue: no IE6 support
+ */
+
+[hidden] {
+    display: none;
+}
+
+
+/* =============================================================================
+   Base
+   ========================================================================== */
+
+/*
+ * 1. Corrects text resizing oddly in IE6/7 when body font-size is set using em units
+ *    http://clagnut.com/blog/348/#c790
+ * 2. Prevents iOS text size adjust after orientation change, without disabling user zoom
+ *    www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/
+ */
+
+html {
+    font-size: 100%; /* 1 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+    -ms-text-size-adjust: 100%; /* 2 */
+}
+
+/*
+ * Addresses font-family inconsistency between 'textarea' and other form elements.
+ */
+
+html,
+button,
+input,
+select,
+textarea {
+    font-family: sans-serif;
+}
+
+/*
+ * Addresses margins handled incorrectly in IE6/7
+ */
+
+body {
+    margin: 0;
+}
+
+
+/* =============================================================================
+   Links
+   ========================================================================== */
+
+/*
+ * Addresses outline displayed oddly in Chrome
+ */
+
+a:focus {
+    outline: thin dotted;
+}
+
+/*
+ * Improves readability when focused and also mouse hovered in all browsers
+ * people.opera.com/patrickl/experiments/keyboard/test
+ */
+
+a:hover,
+a:active {
+    outline: 0;
+}
+
+
+/* =============================================================================
+   Typography
+   ========================================================================== */
+
+/*
+ * Addresses font sizes and margins set differently in IE6/7
+ * Addresses font sizes within 'section' and 'article' in FF4+, Chrome, S5
+ */
+
+
+/*
+ * Addresses styling not present in IE7/8/9, S5, Chrome
+ */
+
+abbr[title] {
+    border-bottom: 1px dotted;
+}
+
+/*
+ * Addresses style set to 'bolder' in FF3+, S4/5, Chrome
+*/
+
+b,
+strong {
+    font-weight: bold;
+}
+
+blockquote {
+    margin: 1em 40px;
+}
+
+/*
+ * Addresses styling not present in S5, Chrome
+ */
+
+dfn {
+    font-style: italic;
+}
+
+/*
+ * Addresses styling not present in IE6/7/8/9
+ */
+
+mark {
+    background: #ff0;
+    color: #000;
+}
+
+/*
+ * Addresses margins set differently in IE6/7
+ */
+
+p,
+pre {
+    margin:0px;
+}
+
+/*
+ * Corrects font family set oddly in IE6, S4/5, Chrome
+ * en.wikipedia.org/wiki/User:Davidgothberg/Test59
+ */
+
+pre,
+code,
+kbd,
+samp {
+  
+}
+
+/*
+ * Improves readability of pre-formatted text in all browsers
+ */
+
+pre {
+    white-space: pre;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+/*
+ * 1. Addresses CSS quotes not supported in IE6/7
+ * 2. Addresses quote property not supported in S4
+ */
+
+/* 1 */
+
+q {
+    quotes: none;
+}
+
+/* 2 */
+
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+small {
+    font-size: 75%;
+}
+
+/*
+ * Prevents sub and sup affecting line-height in all browsers
+ * gist.github.com/413930
+ */
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sup {
+    top: -0.5em;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+
+/* =============================================================================
+   Lists
+   ========================================================================== */
+
+/*
+ * Addresses margins set differently in IE6/7
+ */
+
+dl,
+menu,
+ol,
+ul {
+    margin: 1em 0;
+}
+
+dd {
+    margin: 0 0 0 40px;
+}
+
+/*
+ * Addresses paddings set differently in IE6/7
+ */
+
+menu,
+ol,
+ul {
+    padding: 0 0 0 40px;
+}
+
+/*
+ * Corrects list images handled incorrectly in IE7
+ */
+
+nav ul,
+nav ol {
+    list-style: none;
+    list-style-image: none;
+}
+
+
+/* =============================================================================
+   Embedded content
+   ========================================================================== */
+
+/*
+ * 1. Removes border when inside 'a' element in IE6/7/8/9, FF3
+ * 2. Improves image quality when scaled in IE7
+ *    code.flickr.com/blog/2008/11/12/on-ui-quality-the-little-things-client-side-image-resizing/
+ */
+
+img {
+    border: 0; /* 1 */
+    -ms-interpolation-mode: bicubic; /* 2 */
+}
+
+/*
+ * Corrects overflow displayed oddly in IE9
+ */
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
+
+/* =============================================================================
+   Figures
+   ========================================================================== */
+
+/*
+ * Addresses margin not present in IE6/7/8/9, S5, O11
+ */
+
+figure {
+    margin: 0;
+	-webkit-margin-before: 0;
+	-webkit-margin-after: 0;
+	-webkit-margin-start: 0;
+	-webkit-margin-end: 0;
+}
+
+
+/* =============================================================================
+   Forms
+   ========================================================================== */
+
+/*
+ * Corrects margin displayed oddly in IE6/7
+ */
+
+form {
+    margin: 0;
+}
+
+/*
+ * Define consistent border, margin, and padding
+ */
+
+fieldset {
+    border: 1px solid #c0c0c0;
+    margin: 0 2px;
+    padding: 0.35em 0.625em 0.75em;
+}
+
+/*
+ * 1. Corrects color not being inherited in IE6/7/8/9
+ * 2. Corrects text not wrapping in FF3
+ * 3. Corrects alignment displayed oddly in IE6/7
+ */
+
+legend {
+    border: 0; /* 1 */
+    padding: 0;
+    white-space: normal; /* 2 */
+    *margin-left: -7px; /* 3 */
+}
+
+/*
+ * 1. Corrects font size not being inherited in all browsers
+ * 2. Addresses margins set differently in IE6/7, FF3+, S5, Chrome
+ * 3. Improves appearance and consistency in all browsers
+ */
+
+button,
+input,
+select,
+textarea {
+    font-size: 100%; /* 1 */
+    margin: 0; /* 2 */
+    vertical-align: baseline; /* 3 */
+    *vertical-align: middle; /* 3 */
+}
+
+/*
+ * Addresses FF3/4 setting line-height on 'input' using !important in the UA stylesheet
+ */
+
+button,
+input {
+    line-height: normal; /* 1 */
+}
+
+/*
+ * 1. Improves usability and consistency of cursor style between image-type 'input' and others
+ * 2. Corrects inability to style clickable 'input' types in iOS
+ * 3. Removes inner spacing in IE7 without affecting normal text inputs
+ *    Known issue: inner spacing remains in IE6
+ */
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+    cursor: pointer; /* 1 */
+    -webkit-appearance: button; /* 2 */
+    *overflow: visible;  /* 3 */
+}
+
+/*
+ * Re-set default cursor for disabled elements
+ */
+
+button[disabled],
+input[disabled] {
+    cursor: default;
+}
+
+/*
+ * 1. Addresses box sizing set to content-box in IE8/9
+ * 2. Removes excess padding in IE8/9
+ * 3. Removes excess padding in IE7
+      Known issue: excess padding remains in IE6
+ */
+
+input[type="checkbox"],
+input[type="radio"] {
+    box-sizing: border-box; /* 1 */
+    padding: 0; /* 2 */
+    *height: 13px; /* 3 */
+    *width: 13px; /* 3 */
+}
+
+/*
+ * 1. Addresses appearance set to searchfield in S5, Chrome
+ * 2. Addresses box-sizing set to border-box in S5, Chrome (include -moz to future-proof)
+ */
+
+input[type="search"] {
+    -webkit-appearance: textfield; /* 1 */
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box; /* 2 */
+    box-sizing: content-box;
+}
+
+/*
+ * Removes inner padding and search cancel button in S5, Chrome on OS X
+ */
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+}
+
+/*
+ * Removes inner padding and border in FF3+
+ * www.sitepen.com/blog/2008/05/14/the-devils-in-the-details-fixing-dojos-toolbar-buttons/
+ */
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+/*
+ * 1. Removes default vertical scrollbar in IE6/7/8/9
+ * 2. Improves readability and alignment in all browsers
+ */
+
+textarea {
+    overflow: auto; /* 1 */
+    vertical-align: top; /* 2 */
+}
+
+
+/* =============================================================================
+   Tables
+   ========================================================================== */
+
+/*
+ * Remove most spacing between table cells
+ */
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/* Addition */
+/* Apply a natural box layout model to all elements */
+/* Read this post by Paul Irish: http://paulirish.com/2012/box-sizing-border-box-ftw/ */
+ * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+ 
+
+
+/* ESTILO */
+
+
+
+.ps-container {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	color: #555;
+	background: #fff;
+}
+
+.ps-container > div {
+	position: absolute;
+	width: 50%;
+}
+
+.ps-container > div > div,
+.ps-slidewrapper > nav,
+.ps-slides > div {
+	position: absolute;
+}
+
+.ps-header {
+	top: 0px;
+	left: 0px;
+	height: 100px;
+	z-index: 1001;
+	background: #fff;
+}
+
+.ps-header h1 {
+	line-height: 80px;
+	margin: 0;
+	padding: 20px 20px;
+
+}
+
+.ps-contentwrapper {
+	top: 100px;
+	bottom: 0px;
+	overflow: hidden;
+	z-index: 1000;
+}
+
+.ps-content {
+	background: #fff;
+	width: 100%;
+	height: 100%;
+	padding: 100px; 20px;
+}
+
+.ps-content h2 {
+	padding: 10px 15px;
+	border-right: 1px solid #f2f2f2;
+	border-bottom: 1px solid #f2f2f2;
+	letter-spacing: 4px;
+	margin: 10px 0 30px;
+	text-align: right;
+	font-weight: 700;
+}
+
+.ps-content p {
+	line-height: 26px;
+	padding: 10px 15px;
+	font-weight: 400;
+
+	border-left: 1px solid #f2f2f2;
+	border-top: 1px solid #f2f2f2;
+}
+
+.ps-content span.ps-price {
+	float: left;
+	margin: 10px;
+	width: 140px;
+	height: 140px;
+	line-height: 140px;
+	text-align: center;
+	color: #fff;
+	background: #f7cfc6;
+	background: rgba(247,197,185,0.8);
+	font-size: 55px;
+	font-weight: 200;
+}
+
+.ps-content a:last-child {
+	font-size: 14px;
+	font-weight: 700;
+	color: #555;
+	letter-spacing: 4px;
+	float: right;
+	border: 3px solid #555;
+	padding: 3px;
+	text-indent: 4px;
+}
+
+.no-touch .ps-content a:last-child:hover {
+	color: #b2d79d;
+	border-color: #b2d79d;
+}
+
+.ps-content a:last-child:before {
+	content: '\53';
+	font-family: 'icon';
+	font-style: normal;
+	font-weight: normal;
+	speak: none;
+	padding-right: 5px;
+}
+
+.ps-slidewrapper {
+	right: 0px;
+	top: 0px;
+	height: 100%;
+	overflow: hidden;
+
+}
+
+.ps-slides {
+	top: 0px;
+	bottom: 200px;
+	width: 100%;
+
+}
+
+.ps-slides > div {
+	width: 100%;
+	height: 100%;
+	box-shadow: inset 0 0 0 9999px rgba(179,157,250,0.1);
+
+}
+
+
+
+.ps-slidewrapper > nav {
+	width: 100%;
+	height: 200px;
+	bottom: 0px;
+	right: 0px;
+	z-index: 1000;
+    background:#000 url(../img/bg-padrao.png);
+}
+
+.ps-slidewrapper > nav > a {
+	width: 50%;
+	height: 100%;
+	position: relative;
+	float: left;
+	box-shadow: inset 0 0 0 9999px #d53044;
+	outline: none;
+
+}
+
+.ps-slidewrapper > nav > a:first-child {
+	box-shadow: inset 0 0 0 9999px #f2af32;
+}
+
+.no-touch .ps-slidewrapper > nav > a {
+	-webkit-transition: box-shadow 0.4s ease-in-out;
+	-moz-transition: box-shadow 0.4s ease-in-out;
+	-ms-transition: box-shadow 0.4s ease-in-out;
+	-o-transition: box-shadow 0.4s ease-in-out;
+	transition: box-shadow 0.4s ease-in-out;
+}
+
+.no-touch .ps-slidewrapper > nav > a:hover {
+	box-shadow: inset 0 0 0 9999px rgba(246,224,121,0.1);
+}
+
+.no-touch .ps-slidewrapper > nav > a:first-child:hover {
+	box-shadow: inset 0 0 0 9999px rgba(249,15,15,0.1);
+}
+
+.ps-slidewrapper > nav > a:after {
+	content: '';
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	top: 50%;
+	left: 50%;
+	margin: -35px 0 0 -50px;
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+	border-left: 3px solid #fff;
+	border-top: 3px solid #fff;
+}
+
+.ps-slidewrapper > nav > a:first-child:after {
+	-webkit-transform: rotate(-135deg);
+	-moz-transform: rotate(-135deg);
+	-o-transform: rotate(-135deg);
+	-ms-transform: rotate(-135deg);
+	transform: rotate(-135deg);
+	margin: -100px 0 0 -50px;
+}
+
+.ps-slides > div,
+.ps-slidewrapper > nav > a {
+	background-color: #fff;
+	background-position: center top;
+	background-repeat: no-repeat;
+	-webkit-background-size: auto 100%;
+	-moz-background-size: auto 100%;
+	background-size: auto 100%;
+
+}
+@media (min-width:900px){
+	.ps-slides > div,
+.ps-slidewrapper > nav > a {
+
+	-webkit-background-size:  100%;
+	-moz-background-size:  100%;
+	background-size:  100%;
+}
+}
+.ps-move {
+	-webkit-transition: top 400ms ease-out;
+	-moz-transition: top 400ms ease-out;
+	-o-transition: top 400ms ease-out;
+	-ms-transition: top 400ms ease-out;
+	transition: top 400ms ease-out;
+}
+
+@media screen and (max-width: 860px) {
+
+	.js .ps-container > div {
+		width: 100%;
+	}
+
+	.js .ps-header {
+		height: 50px;
+	}
+
+	.js .ps-header h1 {
+		line-height: 50px;
+		padding: 0px 20px;
+		letter-spacing: 4px;
+	}
+
+	.js .ps-slides {
+		bottom: 320px;
+		top: 50px;
+	}
+
+	.js .ps-slidewrapper > nav {
+		height: 150px;
+	}
+
+	.js .ps-contentwrapper {
+		top: auto;
+		height: 220px;
+		bottom: 100px;
+	}
+
+	.js .ps-content {
+		padding: 10px;
+	}
+
+	.js .ps-content h2 {
+		border-right: none;
+		font-size: 18px;
+		margin: 10px 0;
+		padding-top: 0;
+	}
+
+	.js .ps-content span.ps-price {
+		font-size: 18px;
+		width: 50px;
+		height: 50px;
+		line-height: 50px;
+		font-weight: 700;
+		margin-bottom: 0;
+	}
+
+	.js .ps-content p {
+		line-height: 20px;
+		border: none;
+		padding: 5px 10px;
+		height: 80px;
+		overflow-y: scroll;
+	}
+
+	.js .ps-content a:last-child {
+		font-size: 13px;
+		margin: 10px 20px 0 0;
+	}
+}
+
+
+
+
+
+
+
+
+
+

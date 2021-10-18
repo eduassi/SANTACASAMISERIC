@@ -1,0 +1,118 @@
+.audio-holder {
+  height: 50px;
+  width: 100%;
+  background: #000000a0;
+  position: fixed;
+  bottom: 50px;
+  left: 0;
+}
+
+.green-audio-player {
+  width: 100%;
+  height: 50px;
+}
+
+.audio-bg {
+  width: 50vw;
+  min-width: 290px;
+  margin: auto;
+}
+
+.green-audio-player .controls .controls__current-time {
+  display: none;
+}
+
+.green-audio-player .volume {
+  display: block;
+}
+
+.green-audio-player .volume__slider,
+.green-audio-player .volume__controls {
+  display: none !important;
+}
+
+.volume__button.open::after {
+  position: absolute;
+  content: "";
+  width: 40px;
+  height: 2px;
+  -webkit-transform: rotate(45deg);
+  position: absolute;
+  top: 10px;
+  left: -6px;
+  background: white;
+}
+
+.green-audio-player .slider .gap-progress {
+  background-color: #aa151d;
+}
+
+@media (max-width: 370px) {
+  .green-audio-player {
+    width: 100%;
+    min-width: 100%;
+  }
+}
+
+body:not(.qc-flow) .controls__slider,
+body:not(.qc-flow) .controls__progress,
+body:not(.qc-flow) .pin  {
+  pointer-events: none;
+}
+
+.progress__pin{
+  display: none;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: red;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: red;
+}
+
+.game-coluna {
+  text-align: center;
+  padding-top: 0;
+}
+.game-holder {
+  position: absolute;
+  width: 100vw;
+  height: calc(100vh - 100px);
+  left: 0;
+  top: 0;
+  right: 0;
+  margin: auto;
+  border: 0px;
+}
+
+@media (max-width: 767px) {
+  .game-holder {
+    top: 50px;
+  }
+}
+
+.copyright .short,
+.copyright .long{
+  display: none;
+}
+
+.h5p-playbackRate{
+  display: none !important;
+}
+
+.foot .menu{
+  /* display: none !important; */
+}
