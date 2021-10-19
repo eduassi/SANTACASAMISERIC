@@ -6,6 +6,7 @@
   --green:        #09a74e;
   --criatividade: #ce0080;
   --roxo:         #ce0080;
+  --red:          #ff2a2a;
   --font-text:    #000000;
 }
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
@@ -280,6 +281,17 @@ body:not(.qc-flow) .pin {
   border: 0px;
 }
 
+.cena-primary-color .legenda-quadros {
+  color: var(--font-text);
+}
+
+.tabela th {
+  background: var(--main-color);
+  padding: 6px 10px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: normal;
+}
 
 
 .reflita.square {
@@ -301,6 +313,23 @@ body:not(.qc-flow) .pin {
 }
 
 
+.curiosidade.square {
+  border-color: var(--roxo);
+  color: var(--roxo);
+}
+
+.popup.curios h3 {
+  background: var(--roxo);
+}
+
+.atencao.square {
+  background-position-y: -70px;
+  border-color: var(--red);
+  color: var(--red);
+}
+.popup.aten h3 {
+  background: var(--red);
+}
 
 
 #accordion {
@@ -314,9 +343,36 @@ body:not(.qc-flow) .pin {
   text-shadow: none;
 }
 
+.slidewrap {
+  background: #ededed;
+  color: #000;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  width: 94% !important;
+}
+.slidewrap {
+
+  margin-left: 15px;
+  margin-right: 15px;
+  border-radius: 4px;
+  -webkit-box-shadow: 5px 5px 16px 2px rgb(0 0 0 / 20%);
+  -moz-box-shadow: 5px 5px 16px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 5px 5px 16px 2px rgb(0 0 0 / 20%);
+}
+
+.slidewrap .carousel-tabs .carousel-active-tab a {
+  background: var(--main-color);
+}
 
 
-
+.border-radius-blue {
+  width: calc(100% - 40px);
+  border-radius: 50%;
+  border: 4px var(--main-color) solid;
+}
+              
+     
 
 
 @media (max-width: 767px) {

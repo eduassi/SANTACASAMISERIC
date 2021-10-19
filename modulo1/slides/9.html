@@ -1,45 +1,83 @@
-<style>
-  #mestre {
-    /* background: url('../../player/img/fundo-laranja.jpg'); /* laranja */
-    background: url("../../player/img/fundo-vermelho.jpg"); /* vermelho */
-    background-position: right top;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-  }
-</style>
-
 <div class="cena-primary-color">
+    
   <div class="colunas">
-    <div class="coluna-30">
-      <div class="box">
-        <p>
-          No século XXI, o mundo está destinado a ter uma população com
-          tendência ao envelhecimento e uma sociedade cada vez mais envelhecida.
-          A cada ano, aumenta o número de idosos, o que é facilmente explicado
-          pelo fato de que a expectativa cresce a cada dia.
-        </p>
-        <p>
-          Talvez você esteja se perguntando “mas por que isso está
-          acontecendo?”.
-        </p>
+      <div class="coluna-70">
+          <div class="box">
+              <p class="legenda-quadros">Sed malesuada bibendum felis quis malesuada</p>
+
+              <table class="tabela tabela-menor tabela-texto-esquerda" style=" text-align: center; margin: 0 auto; float: none; width: 86%">
+                  <tr>
+                      <th>Nullam</th>
+                      <th>Nunc</th>
+                      <th>Consequat</th>
+                  </tr>
+                  <tr>
+                      <td>Sed malesuada bibendum felis quis malesuada</td>
+                      <td>Non imperdiet arcu lacinia</td>
+                      <td>Sed malesuada bibendum felis quis malesuada</td>
+                  </tr>
+                  <tr>
+                      <td>Maecenas commodo ipsum est</td>
+                      <td>Maecenas commodo ipsum est</td>
+                      <td>Sed malesuada bibendum felis quis malesuada</td>
+                  </tr>
+                  <tr>
+                      <td>Ut ultricies pellentesque dignissim</td>
+                      <td>Maecenas commodo ipsum est</td>
+                      <td>Non imperdiet arcu lacinia</td>
+                  </tr>
+                  <tr>
+                      <td>Mauris fringilla velit porta massa consectetur</td>
+                      <td>Non imperdiet arcu lacinia</td>
+                      <td>Vestibulum vel consequat quam</td>
+                  </tr>
+                  <tr>
+                      <td>Vestibulum vel consequat quam</td>
+                      <td>Sed malesuada bibendum felis quis malesuada</td>
+                      <td>Nullam pellentesque felis nec augue</td>
+                  </tr>
+                  <tr>
+                      <td>Sed malesuada bibendum</td>
+                      <td>Maecenas commodo ipsum est</td>
+                      <td>Sed malesuada bibendum felis quis malesuada</td>
+                  </tr>
+                  <tr>
+                      <td>Mauris fringilla velit porta massa consectetur</td>
+                      <td>Non imperdiet arcu lacinia</td>
+                      <td>Vestibulum vel consequat quam</td>
+                  </tr>
+              </table>
+              <p class="legenda-quadros">Fonte: Elaborado pelo autor (2021).</p>
+          </div>
       </div>
-    </div>
-    <div class="coluna-70">
-      <div class="box">
-        <div class="figurafull" style="margin: 0 auto; float: none; width: 90%">
-          <span>Homem jovem pensando</span><br />
-          <img src="img/8.jpg" alt="Nulla at gravida lorem" /><br />
-          <span>Fonte: Plataforma Deduca (2021).</span><br />
-          <span class="pracegover" style="padding-right: 20px"
-            >#PraCegoVer: na imagem, aparece um homem jovem de barba vestindo
-            camisa jeans com expressão pensativa. O braço esquerdo está cruzado
-            na barriga e o cotovelo direito está em cima da mão esquerda. O
-            braço direito está levantado e o dedo indicador na testa. Em volta
-            dele, vários pontos de interrogação pretos e de vários tons de
-            cinza.</span
-          >
-        </div>
+      <div class="coluna-30">
+          <div class="box box-bg-orange">
+              <p>Nullam vel semper nisl. Sed a ante quis nibh varius tempor. Nulla vel efficitur augue. Integer tortor eros, volutpat laoreet tempor quis, semper et nisl. Pellentesque vitae commodo mi. Curabitur tempor ultricies mi. Maecenas sed placerat arcu, a tincidunt metus.</p>
+
+              <p>Aenean auctor feugiat sem, vel fermentum mauris semper sit amet. Nam placerat porta est, sed faucibus tortor ultrices sit amet. Vestibulum placerat pretium est, ut maximus nulla imperdiet auctor.</p>
+
+              <p class="centro"><a href="#popup-tela" class="efeito_fade fancybox curiosidade square">Curiosidade</a></p>
+              <div class="popup curios" id="popup-tela">
+                  <h3>Curiosidade</h3>
+                  <p>Quisque purus odio, mollis in nulla ut, elementum cursus neque. <br>Maecenas sit amet dapibus tortor, at lobortis nibh.</p>
+              </div>
+          </div>
       </div>
-    </div>
   </div>
 </div>
+
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.fancybox').fancybox();  
+  icones();
+  $( document ).tooltip(); 
+});
+</script>
+
+<style>
+.tabela td:first-of-type {
+  background-color: #d4d4d4;
+}
+
+</style>
