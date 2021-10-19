@@ -845,8 +845,8 @@ font-size:1em;
 .ui-state-default,
 .ui-widget-content .ui-state-default,
 .ui-widget-header .ui-state-default {
-	font-family: "Montserrat";
-	background: #71040a;
+	/* font-family: "Montserrat"; */
+	background: var(--main-color);
 	font-weight: normal;
 	
 	color:#533283;
@@ -868,14 +868,14 @@ font-size:1em;
 .ui-widget-header .ui-state-focus {
 	background: #FFF;
 	font-weight: normal;
-	color: #e51f2c;
+	color: var(--main-color);
 	
 }
 .ui-state-hover a,
 .ui-state-hover a:hover,
 .ui-state-hover a:link,
 .ui-state-hover a:visited {
-	color: #e51f2c;
+	color: var(--main-color);
 	text-decoration: none;
 }
 .ui-state-active,
@@ -883,12 +883,12 @@ font-size:1em;
 .ui-widget-header .ui-state-active {
 	background: #f6f6f6;
 	font-weight: normal;
-	color: #e51f2c;
+	color: var(--main-color);
 }
 .ui-state-active a,
 .ui-state-active a:link,
 .ui-state-active a:visited {
-	color: #e51f2c;
+	color: var(--main-color);
 	text-decoration: none;
 }
 

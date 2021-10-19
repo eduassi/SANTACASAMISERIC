@@ -773,10 +773,6 @@ h1.titulo02 {
   margin: 0px auto;
   position: relative;
   min-height: 980px;
-  background: url("../../player/img/fundo-branco.jpg");
-  background-position: right top;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
 }
 
 body,
@@ -1482,8 +1478,8 @@ html,
 
 .saibamais.square {
   background-position-y: -140px;
-  border-color: #d37506;
-  color: #d37506;
+  border-color: var(--orange);
+  color: var(--orange);
 }
 
 .curiosidade.square {
@@ -2249,6 +2245,7 @@ span.formula {
   color: #5c5c5c;
 }
 
+
 .figura70 {
   max-width: 67%;
   text-align: center;
@@ -2826,7 +2823,7 @@ span.formula {
   padding-bottom: 0px;
   height: 100%;
   min-height: 100%;
-  background: url("../../player/img/fundo-vermelho.jpg");
+  background: unset;
   background-position: right top;
   background-attachment: fixed;
   background-repeat: no-repeat;
