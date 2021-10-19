@@ -1,5 +1,5 @@
 :root {
-  --main-color: #aa151d;
+  --main-color: #004e94;
 }
 
 @font-face {
@@ -334,7 +334,7 @@ body {
 }
 
 a {
-  color: #71040a;
+  color: var(--main-color);
   text-decoration: none;
 }
 
@@ -401,14 +401,14 @@ h3 {
 h1 {
   font-size: 28px;
   line-height: 30px;
-  color: #e51f2c;
+  color: var(--main-color);
   margin-top: 10px;
   margin-left: 55px;
   margin-bottom: 20px;
 }
 
 h1.palavra-professor {
-  color: #e51f2c;
+  color: var(--main-color);
   font-size: 32px;
   background: url(../img/palavra.png) no-repeat left top;
   padding-left: 60px;
@@ -416,14 +416,14 @@ h1.palavra-professor {
 }
 
 h1.iniciar-estudos {
-  color: #e51f2c;
+  color: var(--main-color);
   font-size: 28px;
   height: 50px;
   line-height: 50px;
 }
 
 h1.objetivos {
-  color: #e51f2c;
+  color: var(--main-color);
   font-size: 28px;
   background: url(../img/objetivos.png) no-repeat left top;
   padding-left: 60px;
@@ -433,7 +433,7 @@ h1.objetivos {
 }
 
 h1.sintese {
-  color: #e51f2c;
+  color: var(--main-color);
   font-size: 32px;
   background: url(../img/sintese.png) no-repeat left top;
   padding-left: 60px;
@@ -441,7 +441,7 @@ h1.sintese {
 }
 
 .desafio {
-  color: #e51f2c;
+  color: var(--main-color);
   background: #fff6b8 url(../img/desafio.png) no-repeat 4% center;
   padding: 15px 15px 15px 35px;
   margin-left: 50px;
@@ -449,14 +449,14 @@ h1.sintese {
 }
 
 h1.professor {
-  color: #e51f2c;
+  color: var(--main-color);
   font-size: 32px;
   background: url(../img/professor.png) no-repeat left top;
   padding-left: 60px;
   height: 50px;
 }
 h1.referencias {
-  color: #e51f2c;
+  color: var(--main-color);
   font-size: 32px;
   height: 50px;
 }
@@ -485,7 +485,7 @@ h1.referencias {
 
 h2 {
   font-size: 22px;
-  color: #e51f2c;
+  color: var(--main-color);
   margin-left: 55px;
   margin-top: 20px;
   line-height: normal;
@@ -494,13 +494,13 @@ h2 {
 
 h3 {
   font-size: 20px;
-  color: #e51f2c;
+  color: var(--main-color);
   margin-left: 55px;
 }
 
 h4 {
   font-size: 18px;
-  color: #e51f2c;
+  color: var(--main-color);
   margin-left: 55px;
 }
 
@@ -675,7 +675,7 @@ img {
   width: 90px;
   position: absolute;
   right: 25px;
-  background-color: #e51f2c;
+  background-color: var(--main-color);
   -webkit-box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.4);
   -moz-box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.4);
   box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.4);
@@ -2743,7 +2743,7 @@ span.formula {
     width: 75px;
     position: absolute;
     right: 25px;
-    background-color: #e51f2c;
+    background-color: var(--main-color);
   }
 
   .imagemlado .slide img {
@@ -2944,11 +2944,11 @@ h3 {
 }
 
 .box h1 {
-  color: #e51f2c !important;
+  color: var(--main-color) !important;
 }
 
 .box h2 {
-  color: #e51f2c !important;
+  color: var(--main-color) !important;
 }
 
 .box .citacao {

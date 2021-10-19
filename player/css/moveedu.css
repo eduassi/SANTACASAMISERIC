@@ -1,3 +1,7 @@
+:root {
+  --main-color: #004e94;
+}
+
 .audio-holder {
   height: 50px;
   width: 100%;
@@ -75,12 +79,12 @@ body:not(.qc-flow) .pin  {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: red;
+  background: var(--main-color);
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: red;
+  background: var(--main-color);
 }
 
 .game-coluna {
